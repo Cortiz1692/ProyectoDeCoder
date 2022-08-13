@@ -45,6 +45,16 @@ header {
 .flex-item2{
     padding-top: 10px;
 }
+.flex-item2 a{
+    transition: color 0.5s;
+
+}
+a:hover {
+  color: rgb(169, 169, 224);
+ 
+
+}
+
 
 /* Footer */
 
@@ -243,7 +253,144 @@ section{
             'parrafo';
             justify-items: center;
 }
+/*====================================================================================PRODUCTOS=========================================================  */
+.mainProductos {
+    width: 100%;
+    height: 100%;
+    
+}
+section{ 
+    width: 100%;
+    height: 100%;
+    
+}
 
+/* SECCION PRINCIPAL */
+.mainProductos h1{
+    color: whitesmoke;
+    grid-area: h1;
+}
+.mainProductos img{
+    grid-area: img;
+}
+.mainProductos img{
+    width: 50%;
+}
+.mainProductos h2{
+    grid-area: h2;
+    color: whitesmoke;
+}
+
+.mainProductos{
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: 
+            'h1'
+            'img'
+            'h2';
+            justify-items: center;
+}
+
+/* Segunda Seccion */
+
+.segundaSeccion h2{
+    color: whitesmoke;
+    grid-area: h2;
+}
+.segundaSeccion_img{
+    grid-area: img;
+}
+.segundaSeccion_img img{
+    width: 100%;
+}
+.segundaSeccion_parrafo{
+    grid-area: parrafo;
+}
+.segundaSeccion_parrafo p{
+    color: whitesmoke;
+}
+.segundaSeccion{
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: 
+            'h2'
+            'img'
+            'parrafo';
+            justify-items: center;
+}
+
+/* TerceraSeccion */
+
+.terceraSeccion h2{
+    color: whitesmoke;
+    grid-area: h2;
+}
+.terceraSeccion_img{
+    grid-area: img;
+}
+.terceraSeccion_img img{
+    width: 100%;
+}
+.terceraSeccion_parrafo{
+    grid-area: parrafo;
+}
+.terceraSeccion_parrafo p{
+    color: whitesmoke;
+}
+.terceraSeccion{
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: 
+            'h2'
+            'img'
+            'parrafo';
+            justify-items: center;
+}
+
+
+/* Cuarta Seccion */
+
+.cuartaSeccion h2{
+    color: whitesmoke;
+    grid-area: h2;
+}
+.cuartaSeccion_img{
+    grid-area: img;
+}
+.cuartaSeccion_img img{
+    width: 100%;
+}
+.cuartaSeccion_parrafo{
+    grid-area: parrafo;
+}
+.cuartaSeccion_parrafo p{
+    color: whitesmoke;
+}
+.cuartaSeccion{
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: 
+            'h2'
+            'img'
+            'parrafo';
+            justify-items: center;
+}
 /*====================================================================================NOSOTROS=========================================================  */
 
 .nosotrosMain {
@@ -293,6 +440,7 @@ section{
 }
 .vision img {
     width: 100%;
+    height: 400px;
 }
 .vision p{
     grid-area: parrafo;
@@ -345,10 +493,65 @@ section{
             'parrafo';
             justify-items: center;
 }
+/*====================================================================================CONTACTO=========================================================  */
+.Form-Suscriptor{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-left: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.Form-Suscriptor h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
 
+.datos {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+.consulta{
+    width: 100%;
+    height: 100px;
+}
+.conboton{
+    width: 100%;
+    background: #1f53c5;
+    padding: 12px;
+    color: white;
+    margin: 6px 0px;
+    font-size: 16px;
+}
+.Form-Suscriptor p{
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+}
+.Form-Suscriptor .boton{
+    width: 100%;
+    background: #1f53c5;
+    border: solid #24303c;
+    padding: 12px;
+    color: white;
+    margin: 6px 0px;
+    font-size: 16px;
 
+}
 
-/* Tablet ============================================================================================*/
+/*====================================================================================MERCADO=========================================================  */
+
+/* ====================================================================================Tablet ============================================================================================*/
 @media screen and (min-width: 600px) {
     .flex-container{
      

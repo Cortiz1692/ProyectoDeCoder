@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +14,7 @@
 </head>
 
 <body>
-    <header>S
+    <header>
         <nav>
             <div class="flex-container">
                 <div class="flex-item logo">
@@ -45,7 +48,7 @@
     </header>
     <main class="mainHome">
 
-        <section class="seccionPrincipal">
+        <section class="seccionPrincipal" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <h1>Grupo de Finanzas e Inversiones</h1>
             <div class="seccionPrincipal_img">
                 <img src="./imagenes/ImagenMercadoCentral.jpg"
@@ -68,7 +71,7 @@
             </div>
         </section>
 
-        <section class="segundaSeccion">
+        <section class="segundaSeccion" data-aos="fade-right">
             <h2>Ypf sigue su plan de inversiones en Vaca Muerta</h2>
             <div class="segundaSeccion_img">
                 <img src="imagenes/HomeImg2.jpg" alt="Planta de ypf de tratado de combustible">
@@ -87,7 +90,7 @@
             </div>
         </section>
 
-        <section class="terceraSeccion">
+        <section class="terceraSeccion" data-aos="fade-left">
             <h2>Los Mercados son azotados por el conflicto entre Rusia y ucrania</h2>
             <div class="terceraSeccion_img">
                 <img src="imagenes/HomeImg3.jpg" alt="Tanques de ucrania transitando las calles">
@@ -106,7 +109,7 @@
             </div>
         </section>
 
-        <section class="cuartaSeccion">
+        <section class="cuartaSeccion" data-aos="fade-right">
             <h2>Los inversores inteligentes. Como actuar en un Mercado Bajista</h2>
             <div class="cuartaSeccion_img">
                 <img class="HomeSubImg" src="imagenes/HomeImg4.jpg" alt="imagen ilustrativa cuarta">
@@ -143,6 +146,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +15,35 @@
 
 <body>
     <header>
-        <div class="Logo">
-            <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
-        </div>
-        <div class="Buscador">
-            <label for="buscador">Buscador:
-                <input class="barrabus" type="text" placeholder="Busqueda" name="buscador">
-        </div>
         <nav>
-            <ul class="ulNavBar">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./Productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./Nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./Contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./Mercados.html">Mercados</a>
-                </li>
-            </ul>
-        </nav>
+            <div class=" flex-container">
+    <div class="flex-item logo">
+        <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
+    </div>
+
+    </div>
+    <div>
+        <ul class="flex-container-nav">
+            <li class="flex-item2">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="flex-item2">
+                <a href="./Productos.html">Productos</a>
+            </li>
+            <li class="flex-item2">
+                <a href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li class="flex-item2">
+                <a href="./Contacto.html">Contacto</a>
+            </li>
+            <li class="flex-item2">
+                <a href="./Mercados.html">Mercados</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
     </header>
-    <main class="mainMercados">
+    <main class="mainMercados"></main>>
         <h1>Mercados</h1>
         <img src="../imagenes/mercadosImg/ImgC.jpg" alt="pantalla que ilustra cotizaciones">
     </main>
@@ -110,23 +114,27 @@
             </ol>
         </div>
     </section>
-    <footer>
-        <div>
-            <h3>Siganos</h3>
-            <h4>Redes Sociales</h4>
-            <img src="../imagenes/icons8-facebook.svg" alt="icono de la red social facebook">
-            <img src="../imagenes/icons8-instagram.svg" alt="icono de la red social Instagram">
-            <img src="../imagenes/icons8-twitter.svg" alt="icono de la red social Twiter">
-            <div class="Contactos">
-                <h4>Contactenos</h4>
-                <img src="../imagenes/icons8-phone-24.png" alt="icono ilustrativo de un telefono">
-                <h5>Tel 123456789</h5>
-                <img src="../imagenes/icons8-mail-24.png" alt="icono ilustrativo de un mail">
-                <h5>Email: CarlosGomes@gmail.com</h5>
-
-
+    <footer class="foot">
+        <div class=”flexbox-container”>
+            <div class="foot1">
+                        <p>Copyright 2022</p>
+                        <p>- CABA - Argentina.</p>
             </div>
+            <div class="foot2">
+                  <a href="" target="_BLANK"/>
+                      <img class="imagenInsta" alt="Instagram" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png"/>
+                  </a><p id="parrafoter1">  Instagram</p>
+                  <br>
+
+                  <a href="" target="_BLANK"/>
+                    <img class="imagenLinkedin"alt="LinkedIn" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/>
+                  </a><p id="parrafoter2">  Linkedin</p>
+            </div>
+        </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
