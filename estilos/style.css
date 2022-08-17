@@ -17,50 +17,12 @@ body {
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 /*-------------------------------------Header--------------------------------------------- */
 header {
     background-color: whitesmoke;
 }
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vw;
-    margin: auto;
-
-}
-
-.buscador {
-    padding-top: 1em;
-}
-
-.flex-container-nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-}
-
-.flex-item2 {
-    padding-top: 10px;
-}
-
-.flex-item2 a {
-    transition: color 0.5s;
-
-}
-
-a:hover {
-    color: rgb(169, 169, 224);
-
-
-}
-
 
 /* Footer */
 
@@ -304,349 +266,79 @@ div {
 /* SECCION PRINCIPAL */
 .contenedorPrincipal h1 {
     color: whitesmoke;
-    grid-area: h1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
 }
 
 .contenedorPrincipal img {
-    grid-area: img;
     width: 100%;
 }
 
 .contenedorPrincipal h2 {
-    grid-area: h2;
     color: whitesmoke;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+
 }
-
-.contenedorPrincipal {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h1'
-        'img'
-        'h2';
-    justify-items: center;
-}
-
-
-
-/* Suscripcion */
-
-.Suscripcion h2 {
-    color: whitesmoke;
-    grid-area: h2;
-}
-
-.Suscripcion img {
-    grid-area: img;
-    width: 100%;
-}
-
-.Suscripcion p {
-    grid-area: parrafo;
-    color: whitesmoke;
-    width: 100%;
-}
-
-.Suscripcion {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
-    justify-items: center;
-}
-
-/* Curso*/
-
-.Curso h2 {
-    color: whitesmoke;
-    grid-area: h2;
-}
-
-.Curso img {
-    grid-area: img;
-    width: 100%;
-}
-
-.Curso p {
-    grid-area: parrafo;
-    color: whitesmoke;
-    width: 100%;
-}
-
-.Curso {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
-    justify-items: center;
-}
-
-
-/* Analisis */
-
-.Analisis h2 {
-    color: whitesmoke;
-    grid-area: h2;
-}
-
-.Analisis img {
-    grid-area: img;
-    width: 100%;
-}
-
-.Analisis p {
-    grid-area: parrafo;
-    color: whitesmoke;
-    width: 100%;
-}
-
-.Analisis {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
-    justify-items: center;
-}
-
-
-/* Consultoria */
-
-.Consultoria h2 {
-    color: whitesmoke;
-    grid-area: h2;
-}
-
-.Consultoria img {
-    grid-area: img;
-    width: 100%;
-}
-
-.Consultoria p {
-    grid-area: parrafo;
-    color: whitesmoke;
-    width: 100%;
-}
-
-.Consultoria {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
-    justify-items: center;
-}
-
-
-
 
 /*====================================================================================NOSOTROS=========================================================  */
 
-.nosotrosMain {
-    width: 100%;
-    height: 100%;
-}
-
-/* NOSOTROS */
-.nosotros_conteedor h1 {
-    color: whitesmoke;
-    grid-area: h1;
-}
-
-.nosotros_img {
-    grid-area: img;
-}
-
-.nosotros_img img {
-    width: 100%;
-}
-
-.nosotros_parrafo {
-    grid-area: parrafo;
-}
-
-.nosotros_parrafo p {
+.container-productos{
     color: whitesmoke;
 }
-
-.nosotros_conteedor {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h1'
-        'img'
-        'parrafo';
-    justify-items: center;
+.col .nos_titulo{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: start;
 }
+.col .nos_p{
+    margin: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: justify;
 
-/* Vision */
-
-.vision h2 {
-    color: whitesmoke;
-    grid-area: h2;
 }
-
-.vision_img {
-    grid-area: img;
-}
-
-.vision img {
-    width: 100%;
+.col .nos_img img{
+    margin: 20px;
+    width: 500px;
     height: 400px;
-}
-
-.vision p {
-    grid-area: parrafo;
-}
-
-.vision p {
-    color: whitesmoke;
-}
-
-.vision {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
     justify-items: center;
-}
 
-/* Meta */
-
-.meta h2 {
-    color: whitesmoke;
-    grid-area: h2;
-}
-
-.meta img {
-    grid-area: img;
-}
-
-.meta img {
-    width: 100%;
-}
-
-.terceraSeccion_parrafo {
-    grid-area: parrafo;
-}
-
-.meta p {
-    color: whitesmoke;
-}
-
-.meta {
-    margin: 1rem 0rem;
-    padding: 0rem 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2'
-        'img'
-        'parrafo';
-    justify-items: center;
 }
 
 /*====================================================================================CONTACTO=========================================================  */
-.Form-Suscriptor {
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-left: 500px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    font-family: 'Lato', sans-serif;
-    color: white;
+
+.form{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.form h1{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.Form-Suscriptor h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
+.enviar{
+    background: rgb(159,195,235);
 }
-
-.datos {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
+.menu {
+    margin-top: 32px;
 }
-
-.consulta {
-    width: 100%;
-    height: 100px;
-}
-
-.conboton {
-    width: 100%;
-    background: #1f53c5;
-    padding: 12px;
-    color: white;
-    margin: 6px 0px;
-    font-size: 16px;
-}
-
-.Form-Suscriptor p {
-    height: 40px;
-    text-align: left;
-    font-size: 18px;
-}
-
-.Form-Suscriptor .boton {
-    width: 100%;
-    background: #1f53c5;
-    border: solid #24303c;
-    padding: 12px;
-    color: white;
-    margin: 6px 0px;
-    font-size: 16px;
-
-}
-
 /*====================================================================================MERCADO=========================================================  */
-
+.titulo{
+    color: whitesmoke;
+}
+.par{
+    color: whitesmoke;
+}
 /* ====================================================================================Tablet ============================================================================================*/
 @media screen and (min-width: 600px) {
     .flex-container {

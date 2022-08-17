@@ -8,81 +8,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/style.css"">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class=" flex-container">
-    <div class="flex-item logo">
-        <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
-    </div>
-
-    </div>
-    <div>
-        <ul class="flex-container-nav">
-            <li class="flex-item2">
-                <a href="../index.html">Home</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Productos.html">Productos</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Nosotros.html">Nosotros</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Contacto.html">Contacto</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Mercados.html">Mercados</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="">FinMer</a>
+                  <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./mercados.html">Mercados</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
     </header>
     <main>
-        <section class="Form-Suscriptor"></section>>
-            <article>
-                <form action="#">
-                    <h4>Formulario Registro</h4>
-                    <label for="Nombre">Nombre y Apellido:
-                        <input class="datos" type="text" placeholder="Christian Ortiz" name="Nombre"><br>
-                        <label for="email">Email:
-                            <input class="datos" type="email" placeholder="@gmail.com" name="email"><br>
-                        </label>
-                        <label for="Edad">Edad:
-                            <input class="datos" type="number" placeholder="Edad" name="Edad">
-                        </label> <br>
-                        <label for="Contacto">Nro Contacto:
-                            <input class="datos" type="number" placeholder="telefono" name="Contacto"><br>
-                        </label> <br>
+        <div class="form">
+            <h1>Contactenos</h1>
+           
+        </div>
 
-                        <label for="consulta"> Consulta:<br>
-                            <textarea class="consulta" placeholder="Escriba su consulta" name="consulta"></textarea><br>
-                            <input class="conboton" type="submit" name="consulta">
-                        </label> <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                        <div class="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">Formulario</div>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" value="Christian Ortiz" required>
+                                <!-- Mensajes para validación   -->
+                                <div class="valid-feedback">¡Campo válido!</div>
+                                <div class="invalid-feedback">Debe completar los datos.</div>
 
-                        <div>Te gustaria recibir noticias actualizadas?
-                            <input type="checkbox" name="acepta" value="1">
-                        </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" value="" required>
+                                <!-- Mensajes para validación   -->
+                                <div class="valid-feedback">¡Campo válido!</div>
+                                <div class="invalid-feedback">Debe completar los datos.</div>
 
-                        <input class="boton" type="submit" value="Si me gustaria">
-                        <input class="boton" type="reset" value="No me gustaria">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="pais" class="form-label">País</label>
+                                <select class="form-select" id="pais" required>
+                                    <option selected disabled value="">Seleccione...</option>
+                                    <option>Argentina/option>
+                                    <option>Colombia</option>
+                                    <option>Chile</option>
+                                    <option>Bolivia</option>
+                                    <option>Peru</option>
+                                    <option>Uruguay</option>
+                                </select>
+                                <!-- Mensajes para validación   -->
+                                <div class="valid-feedback">¡Campo válido!</div>
+                                <div class="invalid-feedback">Debe completar los datos.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                                <div class="valid-feedback">¡Campo válido!</div>
+                                <div class="invalid-feedback">Debe completar los datos.</div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <select class="form-select menu" aria-label="Default select example">
+                                    <option selected>Servicios</option>
+                                    <option value="1">Suscripcion</option>
+                                    <option value="2">Consultoria</option>
+                                    <option value="3">Cursos</option>
+                                    <option value="3">Analisis</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Inserte su consulta</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Terminos y condiciones
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    No acepto terminos y condiciones
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Acepto terminos y condiciones
+                                </label>
+                            </div>
+                            <button class="btn btn-warning fw-bold enviar" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-                        <p>Noticias de Preferencia:</p>
-                        <select name="letra" id="letra">
-                            <option value="L">Locales</option>
-                            <option value="E">Exterior</option>
-                            <option value="T">Todas las Noticias</option>
-                        </select>
-                        <div>Acepta terminos y condiciones</div>
-                        <input type="checkbox" name="acepta" value="1" />
-                </form>
-            </article>
         </section>
 
     </main>
@@ -90,24 +159,32 @@
     <footer class="foot">
         <div class=”flexbox-container”>
             <div class="foot1">
-                        <p>Copyright 2022</p>
-                        <p>- CABA - Argentina.</p>
+                <p>Copyright 2022</p>
+                <p>- CABA - Argentina.</p>
             </div>
             <div class="foot2">
-                  <a href="" target="_BLANK"/>
-                      <img class="imagenInsta" alt="Instagram" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png"/>
-                  </a><p id="parrafoter1">  Instagram</p>
-                  <br>
+                <a href="" target="_BLANK" />
+                <img class="imagenInsta" alt="Instagram"
+                    src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" />
+                </a>
+                <p id="parrafoter1"> Instagram</p>
+                <br>
 
-                  <a href="" target="_BLANK"/>
-                    <img class="imagenLinkedin"alt="LinkedIn" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/>
-                  </a><p id="parrafoter2">  Linkedin</p>
+                <a href="" target="_BLANK" />
+                <img class="imagenLinkedin" alt="LinkedIn"
+                    src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" />
+                </a>
+                <p id="parrafoter2"> Linkedin</p>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>

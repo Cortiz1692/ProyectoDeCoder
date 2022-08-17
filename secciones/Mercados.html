@@ -8,6 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Document</title>
@@ -15,126 +17,167 @@
 
 <body>
     <header>
-        <nav>
-            <div class=" flex-container">
-    <div class="flex-item logo">
-        <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
-    </div>
-
-    </div>
-    <div>
-        <ul class="flex-container-nav">
-            <li class="flex-item2">
-                <a href="../index.html">Home</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Productos.html">Productos</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Nosotros.html">Nosotros</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Contacto.html">Contacto</a>
-            </li>
-            <li class="flex-item2">
-                <a href="./Mercados.html">Mercados</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="">FinMer</a>
+                  <img src="../imagenes/icons8-old-vmware-logo.svg" alt="Logo de la Empresa">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./mercados.html">Mercados</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        </nav>
     </header>
-    <main class="mainMercados"></main>>
-        <h1>Mercados</h1>
-        <img src="../imagenes/mercadosImg/ImgC.jpg" alt="pantalla que ilustra cotizaciones">
-    </main>
-    <section class="Mercado">
-        <div class="IntETF">
-            <h2>Mercado Exterior</h2>
-            <h3>ETF</h3>
-            <Ul>
-                <li>
-                    <h4>Indice SPY</h4>
-                    <img class="SPY" src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>Indice DOW</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>Indice NDAQ</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>Indice QQQ</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg">
-                </li>
-            </Ul>
+
+    <section class="container">
+        <h1 class="text-center mt-3 titulo">Mercados</h1>
+
+        <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+            <div class="par">
+                <p>Mientras se van conociendo decisiones de política económica, el dólar libre restó 4 pesos, a $291. También retrocedieron las cotizaciones bursátiles. Las reservas del BCRA perdieron USD 149 millones. Subieron los bonos y el riesgo país quedó debajo de los 2.400 puntos. Conozca las cootizaciones actuales de los indices y acciones mas ponderantes.</p>
+
+            </div class= "container">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">SPY</h5>
+                      <p class="card-text">El SPDR S&P 500 ETF Trust (NYSE:SPY) cotizaba al alza por cuarta semana consecutiva y los inversores siguieron recibiendo buenas noticias relacionadas con la inflación..</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">DOW</h5>
+                      <p class="card-text">Según los 13 analistas que le han asignado precios objetivo de 12 meses en los últimos 3 meses, Dow tiene un precio objetivo promedio de 73,54 dólares, con un máximo de 82,00 dólares y un mínimo de 64,00 dólares..</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NASDAQ</h5>
+                      <p class="card-text">Las acciones estadounidenses cotizaron al alza hacia el final de la jornada de trading del viernes, en la que el Nasdaq Composite avanzó más de 200 puntos .</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">APPL</h5>
+                      <p class="card-text">El repunte se ha visto impulsado por unos resultados mejores de lo que se temía de algunas de las grandes Big Tech, un descenso de los rendimientos del Tesoro estadounidense y la especulación de que la economía pueda eludir una recesión.  Apple, por ejemplo, ha subido un 27% desde el mínimo de junio y se encuentra ya a menos de un 10% de sus máximos históricos de enero.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MELI</h5>
+                      <p class="card-text">Los bancos argentinos tienen una valuación de mercado que se encuentra "por el piso", y hoy la capitalización bursátil de todos ellos juntos apenas representa el 6% del valor de Mercado Libre.
+                        El sitio de comercio electrónico argentino, que tiene amplia proyección en gran parte de América, cotiza en Wall Street y tiene un precio de mercado de alrededor de u$s50.000 millones.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../imagenes/mercadosImg/spy500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TESLA</h5>
+                      <p class="card-text">El rival de Tesla Inc (NASDAQ:TSLA), XPeng Inc (NYSE:XPEV), presentó la tecnología de carga ultrarrápida para sus coches eléctricos en su Supercharging Media Day celebrado en Guangzhou el lunes.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="IntAcciones">
-            <h3>Acciones Mercado Internacional</h3>
-            <ol>
-                <li>
-                    <h4>APPL</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>AMZN</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>KO</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4>TSLA</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-            </ol>
-        </div>
-        <div class="NacAcciones">
-            <h2>Mercado Local</h2>
-            <h3>Acciones Locales</h3>
-            <ol>
-                <li>
-                    <h4>GGAL</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4> YPFD</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4> CVH</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-                <li>
-                    <h4> ALUA</h4>
-                    <img src="../imagenes/mercadosImg/spy500.jpg" alt="">
-                </li>
-            </ol>
-        </div>
+
+
     </section>
+
+
     <footer class="foot">
         <div class=”flexbox-container”>
             <div class="foot1">
-                        <p>Copyright 2022</p>
-                        <p>- CABA - Argentina.</p>
+                <p>Copyright 2022</p>
+                <p>- CABA - Argentina.</p>
             </div>
             <div class="foot2">
-                  <a href="" target="_BLANK"/>
-                      <img class="imagenInsta" alt="Instagram" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png"/>
-                  </a><p id="parrafoter1">  Instagram</p>
-                  <br>
+                <a href="" target="_BLANK" />
+                <img class="imagenInsta" alt="Instagram"
+                    src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" />
+                </a>
+                <p id="parrafoter1"> Instagram</p>
+                <br>
 
-                  <a href="" target="_BLANK"/>
-                    <img class="imagenLinkedin"alt="LinkedIn" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/>
-                  </a><p id="parrafoter2">  Linkedin</p>
+                <a href="" target="_BLANK" />
+                <img class="imagenLinkedin" alt="LinkedIn"
+                    src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" />
+                </a>
+                <p id="parrafoter2"> Linkedin</p>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
