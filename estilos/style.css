@@ -76,12 +76,12 @@ header {
     display: flex;
 }
 
-.flexbox-container>div {
+.flexbox-container div {
     width: 50%;
     padding: 10px;
 }
 
-.flexbox-container>div:first-child {
+.flexbox-container div:first-child {
     margin-right: 20px;
 }
 
@@ -269,6 +269,7 @@ div {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    margin: 20px;
 
 }
 
@@ -281,12 +282,14 @@ div {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
+    margin: 20px;
 
 }
 
+
 /*====================================================================================NOSOTROS=========================================================  */
 
-.container-productos{
+.container-nosotros{
     color: whitesmoke;
 }
 .col .nos_titulo{
@@ -439,200 +442,4 @@ div {
         display: flex;
         align-items: center;
         text-align: center;
-
-
-    }
-
-    /* ================================================================ Productos ========================================================================*/
-    .ContenedorSuscripcion img {
-     width: 400px;
-     height: 300px;
-
-    }
-
-        .ContenedorSuscripcion .Suscripcion {
-            grid-area: suscripcion;
-            width: 100%;
-            height: 100%;
-
-        }
-
-        .ContenedorSuscripcion .Curso {
-            grid-area: curso;
-            width: 100%;
-            height: 100%;
-
-
-        }
-
-        .ContenedorSuscripcion .Analisis {
-            grid-area: analisis;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .ContenedorSuscripcion .Consultoria {
-        grid-area: consultoria;
-        width: 100%;
-        height: 100%;
-    }
-
-    .ContenedorSuscripcion {
-        margin: 1rem 0rem;
-        padding: 0rem 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 2rem;
-        grid-template-areas:
-            'suscripcion   curso'
-            'analisis      consultoria';
-        justify-items: center;
-    }
-
-    /* ================================================================ Nosotros ========================================================================*/
-
-    /*  */
-
-    .nosotros_conteedor {
-        margin: 1rem 0 3rem 0;
-        padding: 0rem 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5rem auto;
-        gap: 2rem;
-        grid-template-areas:
-            'h1   h1    '
-            'img  parrafo';
-        justify-items: center;
-    }
-
-    .nosotros_img {
-        width: 500px;
-        height: 300px;
-    }
-
-    .nosotros_parrafo {
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    /* Vision */
-    .vision {
-        margin: 1rem 0rem 3rem 0;
-        padding: 0rem 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5rem auto;
-        gap: 2rem;
-        grid-template-areas:
-            'h2   h2'
-            'parrafo  img';
-        justify-items: center;
-    }
-
-    .vison img {
-        width: 500px;
-        height: 200px;
-    }
-
-    .vision p {
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-    }
-
-
-    /* Meta */
-    .meta {
-        margin: 1rem 0rem 3rem 0;
-        padding: 0rem 1rem;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 5rem auto;
-        gap: 2rem;
-        grid-template-areas:
-            'h2   h2'
-            'img  parrafo';
-        justify-items: center;
-    }
-
-    .meta img {
-        width: 700px;
-        height: 400px;
-
-
-    }
-
-    .meta p {
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    /* ================================================================ Contacto ========================================================================*/
-
-    .Form-Suscriptor {
-        width: 400px;
-        background: #24303c;
-        padding: 30px;
-        margin: auto;
-        margin-left: 500px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        border-radius: 4px;
-        font-family: 'Lato', sans-serif;
-        color: white;
-    }
-    
-    .Form-Suscriptor h4 {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    
-    .datos {
-        width: 100%;
-        background: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: 'Lato', sans-serif;
-        font-size: 18px;
-    }
-    
-    .consulta {
-        width: 100%;
-        height: 100px;
-    }
-    
-    .conboton {
-        width: 100%;
-        background: #1f53c5;
-        padding: 12px;
-        color: white;
-        margin: 6px 0px;
-        font-size: 16px;
-    }
-    
-    .Form-Suscriptor p {
-        height: 40px;
-        text-align: left;
-        font-size: 18px;
-    }
-    
-    .Form-Suscriptor .boton {
-        width: 100%;
-        background: #1f53c5;
-        border: solid #24303c;
-        padding: 12px;
-        color: white;
-        margin: 6px 0px;
-        font-size: 16px;
-    
     }
