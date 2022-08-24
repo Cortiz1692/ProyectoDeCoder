@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100;400&family=Rubik:wght@300&display=swap');
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------Mobile First------------------------------  */
+body {
+    background: linear-gradient(#000, #9198e5);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: justify;
+    justify-content: center;
+}
+
+
+
+/* ====================================================================================Tablet ============================================================================================*/
+@media screen and (min-width: 600px) {
+    .flex-container {
+
+        justify-content: center;
+    }
+
+    .flex-container-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+/* Dekstop */
+@media screen and (min-width: 1024px) {
+
+    /* Segunda seccion */
+
+    .segundaSeccion {
+        margin: 1rem 0 3rem 0;
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h2   h2    '
+            'img  parrafo';
+        justify-items: center;
+    }
+
+    .segundaSeccion_img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .segundaSeccion_parrafo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    /* Tercera seccion */
+    .terceraSeccion {
+        margin: 1rem 0rem 3rem 0;
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h2   h2'
+            'parrafo  img';
+        justify-items: center;
+    }
+
+    .terceraSeccion_img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .terceraSeccion_parrafo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    /* Cuarta seccion */
+    .cuartaSeccion {
+        margin: 1rem 0rem 3rem 0;
+        padding: 0rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h2   h2'
+            'img  parrafo';
+        justify-items: center;
+    }
+
+    .cuartaSeccion_img {
+        width: 700px;
+        height: 400px;
+
+
+    }
+
+    .cuartaSeccion_parrafo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+}
