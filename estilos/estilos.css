@@ -196,7 +196,6 @@ div {
 }
 
 .col .nos_titulo {
-  text-shadow: 20px 15px 7px #000;
   margin: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -213,10 +212,9 @@ div {
 }
 
 .col .nos_img img {
-  border-radius: 50%;
   margin: 30px;
-  width: 500px;
   height: 400px;
+  width: 500px;
   justify-items: center;
 }
 
@@ -317,6 +315,18 @@ body {
   min-height: 100vh;
   text-align: justify;
   justify-content: center;
+}
+
+.sombra, .col .nos_titulo {
+  text-shadow: 20px 15px 7px #000;
+}
+
+.imgBorder, .col .nos_img img {
+  border-radius: 50%;
+}
+
+.imgP, .seccionPrincipal_img img, .contenedorPrincipal img {
+  border-radius: 2em;
 }
 
 /* ====================================================================================Tablet ============================================================================================*/
