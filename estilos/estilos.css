@@ -12,6 +12,16 @@ section {
   height: 100%;
 }
 
+a {
+  margin: 30px;
+}
+
+.volverNav {
+  color: whitesmoke;
+  margin: 20px;
+  padding: 20px;
+}
+
 /* SECCION PRINCIPAL */
 .seccionPrincipal h1 {
   color: whitesmoke;
@@ -48,8 +58,9 @@ section {
 /* Segunda Seccion */
 .segundaSeccion h2 {
   color: whitesmoke;
-  text-shadow: 20px 15px 7px #000;
   grid-area: h2;
+  position: relative;
+  top: 10px;
 }
 
 .segundaSeccion_img {
@@ -59,7 +70,7 @@ section {
 .segundaSeccion_img img {
   width: 100%;
   border-radius: 2em;
-  box-shadow: 30px 10px 10px 10px #000;
+  box-shadow: 15px 5px 5px 5px #000;
 }
 
 .segundaSeccion_parrafo {
@@ -84,8 +95,9 @@ section {
 /* TerceraSeccion */
 .terceraSeccion h2 {
   color: whitesmoke;
-  text-shadow: 20px 15px 7px #000;
   grid-area: h2;
+  position: relative;
+  top: 30px;
 }
 
 .terceraSeccion_img {
@@ -95,7 +107,7 @@ section {
 .terceraSeccion_img img {
   width: 100%;
   border-radius: 2em;
-  box-shadow: 30px 10px 10px 10px #000;
+  box-shadow: 15px 5px 5px 5px #000;
 }
 
 .terceraSeccion_parrafo {
@@ -120,8 +132,9 @@ section {
 /* Cuarta Seccion */
 .cuartaSeccion h2 {
   color: whitesmoke;
-  text-shadow: 20px 15px 7px #000;
   grid-area: h2;
+  position: relative;
+  top: 30px;
 }
 
 .cuartaSeccion_img {
@@ -131,7 +144,7 @@ section {
 .cuartaSeccion_img img {
   width: 100%;
   border-radius: 2em;
-  box-shadow: 30px 10px 10px 10px #000;
+  box-shadow: 15px 5px 5px 5px #000;
 }
 
 .cuartaSeccion_parrafo {
@@ -157,6 +170,7 @@ section {
 .mainProductos {
   width: 100%;
   height: 100%;
+  max-width: 95%;
 }
 
 section {
@@ -212,13 +226,19 @@ div {
 }
 
 .col .nos_img img {
-  margin: 30px;
+  max-width: 75%;
+  margin: 50px;
   height: 400px;
   width: 500px;
   justify-items: center;
 }
 
 /* --------------Contacto------------------------------  */
+.containerForm {
+  max-width: 50%;
+  margin-left: 25%;
+}
+
 .form {
   color: whitesmoke;
   font-size: 20px;
@@ -226,6 +246,7 @@ div {
   text-align: center;
 }
 .form h1 {
+  margin: 30px;
   color: whitesmoke;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -240,6 +261,11 @@ div {
 }
 
 /* --------------Mercado------------------------------  */
+.container {
+  margin: 30px;
+  max-width: 100%;
+}
+
 .titulo {
   color: whitesmoke;
 }
@@ -250,7 +276,7 @@ div {
 
 .foot {
   grid-area: footer;
-  background-color: rgba(112, 116, 148, 0.6431372549);
+  background-color: whitesmoke;
   padding: 10px;
   text-align: center;
   margin-top: auto;
@@ -266,18 +292,6 @@ div {
 .foot2 {
   display: inline-block;
   margin-left: 2em;
-}
-
-.imagenInsta {
-  display: inline-block;
-  width: 22px;
-  align-content: left;
-}
-
-.imagenLinkedin {
-  display: inline-block;
-  width: 22px;
-  align-content: left;
 }
 
 #parrafoter1 {
@@ -317,7 +331,7 @@ body {
   justify-content: center;
 }
 
-.sombra, .col .nos_titulo {
+.sombra {
   text-shadow: 20px 15px 7px #000;
 }
 
