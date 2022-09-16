@@ -30,6 +30,7 @@ a {
 .seccionPrincipal h1 {
     color: whitesmoke;
     grid-area: h1;
+    font-size: 25px;
 }
 
 .seccionPrincipal_img {
@@ -67,6 +68,7 @@ a {
 /* Segunda Seccion */
 
 .segundaSeccion h2 {
+    font-size: 25px;
     color: whitesmoke;
     grid-area: h2;
     position: relative;
@@ -108,6 +110,7 @@ a {
 /* TerceraSeccion */
 
 .terceraSeccion h2 {
+    font-size: 25px;
     color: whitesmoke;
     grid-area: h2;
     position: relative;
@@ -150,6 +153,7 @@ a {
 /* Cuarta Seccion */
 
 .cuartaSeccion h2 {
+    font-size: 25px;
     color: whitesmoke;
     grid-area: h2;
     position: relative;
@@ -261,8 +265,9 @@ div {
 
 /* --------------Contacto------------------------------  */
 .containerForm{
-    max-width: 50%;
-    margin-left: 25%;
+   margin: 20px;
+   padding: 20px;
+    
 }
 
 .form{

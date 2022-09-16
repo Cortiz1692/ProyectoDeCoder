@@ -26,6 +26,7 @@ a {
 .seccionPrincipal h1 {
   color: whitesmoke;
   grid-area: h1;
+  font-size: 25px;
 }
 
 .seccionPrincipal_img {
@@ -57,6 +58,7 @@ a {
 
 /* Segunda Seccion */
 .segundaSeccion h2 {
+  font-size: 25px;
   color: whitesmoke;
   grid-area: h2;
   position: relative;
@@ -94,6 +96,7 @@ a {
 
 /* TerceraSeccion */
 .terceraSeccion h2 {
+  font-size: 25px;
   color: whitesmoke;
   grid-area: h2;
   position: relative;
@@ -131,6 +134,7 @@ a {
 
 /* Cuarta Seccion */
 .cuartaSeccion h2 {
+  font-size: 25px;
   color: whitesmoke;
   grid-area: h2;
   position: relative;
@@ -235,8 +239,8 @@ div {
 
 /* --------------Contacto------------------------------  */
 .containerForm {
-  max-width: 50%;
-  margin-left: 25%;
+  margin: 20px;
+  padding: 20px;
 }
 
 .form {
@@ -274,44 +278,22 @@ div {
   color: whitesmoke;
 }
 
-.foot {
-  grid-area: footer;
+footer {
   background-color: whitesmoke;
-  padding: 10px;
+}
+
+footer h3, .copy {
+  font-size: 18px;
+  color: rgb(45, 45, 169);
   text-align: center;
-  margin-top: auto;
-  color: rgb(24, 2, 2);
 }
 
-.foot1 {
-  margin-top: 1em;
-  display: inline-block;
-  margin-left: auto;
-}
-
-.foot2 {
-  display: inline-block;
-  margin-left: 2em;
-}
-
-#parrafoter1 {
-  display: inline-block;
-}
-
-#parrafoter2 {
-  display: inline-block;
-}
-
-.flexbox-container {
-  display: -ms-flex;
+.redesSociales {
   display: flex;
-}
-.flexbox-container div {
-  width: 50%;
-  padding: 10px;
-}
-.flexbox-container div:first-child {
-  margin-right: 20px;
+  color: rgb(24, 2, 2);
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 * {
@@ -356,6 +338,21 @@ body {
   li {
     list-style: none;
   }
+  .redesSociales {
+    display: flex;
+    color: rgb(24, 2, 2);
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  .redes {
+    margin: 30px;
+  }
+  /*============================= contacto ==================== */
+  .containerForm {
+    max-width: 80%;
+    margin: auto;
+  }
 }
 /* Dekstop */
 @media screen and (min-width: 1024px) {
@@ -367,7 +364,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5rem auto;
     gap: 2rem;
-    grid-template-areas: "h2   h2    " "img  parrafo";
+    grid-template-areas: "img   h2    " "img  parrafo";
     justify-items: center;
   }
   .segundaSeccion_img {
@@ -376,6 +373,8 @@ body {
   }
   .segundaSeccion_parrafo {
     display: flex;
+    position: relative;
+    margin-bottom: 50px;
     align-items: center;
     text-align: center;
   }
@@ -387,7 +386,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5rem auto;
     gap: 2rem;
-    grid-template-areas: "h2   h2" "parrafo  img";
+    grid-template-areas: "h2   img" "parrafo  img";
     justify-items: center;
   }
   .terceraSeccion_img {
@@ -407,7 +406,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5rem auto;
     gap: 2rem;
-    grid-template-areas: "h2   h2" "img  parrafo";
+    grid-template-areas: "img   h2" "img  parrafo";
     justify-items: center;
   }
   .cuartaSeccion_img {
@@ -418,5 +417,10 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+  }
+  /*============================= contacto ==================== */
+  .containerForm {
+    max-width: 50%;
+    margin: auto;
   }
 }/*# sourceMappingURL=estilos.css.map */

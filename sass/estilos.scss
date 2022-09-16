@@ -47,6 +47,26 @@ body {
     li {
         list-style: none;
     }
+    .redesSociales {
+        display: flex;
+        color: rgb(24, 2, 2);
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .redes{
+        margin: 30px;
+    }
+
+    /*============================= contacto ==================== */
+    .containerForm{
+        max-width: 80%;
+        margin: auto;
+        
+         
+     }
+
 }
 
 /* Dekstop */
@@ -62,7 +82,7 @@ body {
         grid-template-rows: 5rem auto;
         gap: 2rem;
         grid-template-areas:
-            'h2   h2    '
+            'img   h2    '
             'img  parrafo';
         justify-items: center;
     }
@@ -74,6 +94,8 @@ body {
 
     .segundaSeccion_parrafo {
         display: flex;
+        position: relative;
+        margin-bottom: 50px;
         align-items: center;
         text-align: center;
 
@@ -88,7 +110,7 @@ body {
         grid-template-rows: 5rem auto;
         gap: 2rem;
         grid-template-areas:
-            'h2   h2'
+            'h2   img'
             'parrafo  img';
         justify-items: center;
     }
@@ -115,7 +137,7 @@ body {
         grid-template-rows: 5rem auto;
         gap: 2rem;
         grid-template-areas:
-            'h2   h2'
+            'img   h2'
             'img  parrafo';
         justify-items: center;
     }
@@ -132,5 +154,16 @@ body {
         align-items: center;
         text-align: center;
     }
+
+    
+    /*============================= contacto ==================== */
+    .containerForm{
+        max-width: 50%;
+        margin: auto;
+        
+         
+     }
+
+    
 
 }
