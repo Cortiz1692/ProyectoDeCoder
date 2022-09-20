@@ -174,7 +174,6 @@ a {
 
 /* --------------Productos------------------------------  */
 .mainProductos {
-  width: 100%;
   height: 100%;
   justify-content: center;
   max-width: 100%;
@@ -225,7 +224,6 @@ div {
 }
 
 .col .nos_p {
-  margin-top: 100px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -233,8 +231,8 @@ div {
 }
 
 .col .nos_img img {
-  max-width: 75%;
-  margin: 50px;
+  max-width: 100%;
+  margin: 10px;
   height: 400px;
   width: 600px;
   justify-items: center;
@@ -414,5 +412,10 @@ body {
   .containerForm {
     max-width: 50%;
     margin: auto;
+  }
+  /*=======================nosotros====================*/
+  .nos_p {
+    position: relative;
+    top: 100px;
   }
 }/*# sourceMappingURL=estilos.css.map */
